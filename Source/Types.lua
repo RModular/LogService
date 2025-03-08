@@ -15,4 +15,4 @@ export type LogService = {
 	LogToFile: (self: LogService, filename: string) -> (),
 }
 
-return {
+return {}
