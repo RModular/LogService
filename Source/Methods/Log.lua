@@ -10,14 +10,7 @@ local OnLogInfoEvent: BindableEvent = script.Parent.Parent.Events:WaitForChild('
 local OnLogWarnEvent: BindableEvent = script.Parent.Parent.Events:WaitForChild('OnLogWarn') :: BindableEvent
 local OnLogErrorEvent: BindableEvent = script.Parent.Parent.Events:WaitForChild('OnLogError') :: BindableEvent
 
---[[
-    Logs a message with a specified log level and optional details.
-
-    @param message (string) - The message to log.
-    @param logLevel (Types.LogType?) - The level of the log (Info, Warning, or Error). Defaults to "Info".
-    @param outputDetails (boolean?) - Whether to include timestamp details in the output. Defaults to false.
-    @return nil
-]]
+-- Logs a message with a specified log level and optional details.
 function Module:Log(message: string, logLevel: Types.LogType?, outputDetails: boolean?): nil
     -- Default values
     local Message: string = message
